@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_toRightOf="@id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sent" />
+
+    <EditText
+        android:id="@+id/edit_message2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:hint="@string/edit_message" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_toRightOf="@+id/edit_message2"
+        android:layout_below="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sent" />
+
+</RelativeLayout>
